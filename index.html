@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Educated PA - Blog</title>
+    <meta name="description" content="Essential guidance for aspiring physician assistants. Get the insights you need to succeed in PA school applications and beyond.">
+    <meta name="keywords" content="PA school blog, physician assistant education, PA school applications, CASPA, PA school admissions, pre-PA student resources">
+    <meta name="author" content="The Educated PA">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The Educated PA - Blog">
+    <meta property="og:description" content="Essential guidance for aspiring physician assistants. Get the insights you need to succeed in PA school applications and beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:site_name" content="The Educated PA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Educated PA - Blog">
+    <meta name="twitter:description" content="Essential guidance for aspiring physician assistants. Get the insights you need to succeed in PA school applications and beyond.">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "The Educated PA",
+      "description": "Essential guidance for aspiring physician assistants",
+      "url": "https://yourdomain.com/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Educated PA"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "The Ultimate Guide to Writing a Compelling PA School Personal Statement",
+          "url": "https://yourdomain.com/personal-statement-guide.html",
+          "datePublished": "2025-07-08"
+        },
+        {
+          "@type": "BlogPosting", 
+          "headline": "Maximizing Your Patient Care Experience: Quality Over Quantity",
+          "url": "https://yourdomain.com/patient-care-experience.html",
+          "datePublished": "2025-07-05"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="The Educated PA">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9ff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .blog-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .blog-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .featured-post-content {
+            padding: 2.5rem;
+        }
+
+        .featured-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .featured-post h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .featured-post p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .post-meta {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #5a6fd8;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-card h3 {
+            color: #333;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+            line-height: 1.3;
+        }
+
+        .blog-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .blog-card .post-meta {
+            margin-bottom: 1rem;
+        }
+
+        .blog-card .read-more {
+            font-size: 0.9rem;
+        }
+
+        /* Categories */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+
+        .category-btn {
+            background: white;
+            color: #667eea;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Newsletter Signup */
+        .newsletter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .newsletter h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .blog-header h2 {
+                font-size: 2rem;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-post h3 {
+                font-size: 1.6rem;
+            }
+            
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .blog-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .featured-post {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">The Educated PA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>The Educated PA Blog</h1>
+                <p>Essential guidance for aspiring physician assistants. Get the insights you need to succeed in PA school applications and beyond.</p>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <div class="container">
+                <div class="blog-header">
+                    <h2>Latest Articles</h2>
+                    <p>Stay informed with our latest insights on PA school applications, career guidance, and professional development.</p>
+                </div>
+
+                <div class="categories">
+                    <a href="#" class="category-btn active">All Posts</a>
+                    <a href="#" class="category-btn">Applications</a>
+                    <a href="#" class="category-btn">Interview Prep</a>
+                    <a href="#" class="category-btn">Prerequisites</a>
+                    <a href="#" class="category-btn">Career Guidance</a>
+                    <a href="#" class="category-btn">Student Life</a>
+                </div>
+
+                <article class="featured-post">
+                    <div class="featured-post-content">
+                        <span class="featured-badge">Featured</span>
+                        <div class="post-meta">Published on July 8, 2025 • 8 min read</div>
+                        <h3>The Ultimate Guide to Writing a Compelling PA School Personal Statement</h3>
+                        <p>Your personal statement is your chance to stand out from thousands of other applicants. Learn the proven strategies and insider tips that admissions committees look for in a stellar personal statement. From crafting your opening hook to showcasing your unique journey, we'll walk you through every step of the process.</p>
+                        <a href="personal-statement-guide.html" class="read-more">Read Full Article →</a>
+                    </div>
+                </article>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">July 5, 2025 • 5 min read</div>
+                            <h3>Maximizing Your Patient Care Experience: Quality Over Quantity</h3>
+                            <p>Learn how to make the most of your clinical hours and gain meaningful patient care experience that PA schools value. Discover the types of experiences that truly matter.</p>
+                            <a href="patient-care-experience.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">July 3, 2025 • 6 min read</div>
+                            <h3>PA School Interview Success: Common Questions and How to Answer Them</h3>
+                            <p>Master the most frequently asked PA school interview questions with our comprehensive guide. Practice scenarios and learn what admissions committees want to hear.</p>
+                            <a href="interview-success.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">June 30, 2025 • 4 min read</div>
+                            <h3>Understanding PA School Prerequisites: A State-by-State Guide</h3>
+                            <p>Navigate the complex world of PA school prerequisites. Learn which courses you need and how requirements vary between different programs and states.</p>
+                            <a href="prerequisites-guide.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">June 28, 2025 • 7 min read</div>
+                            <h3>Letters of Recommendation: How to Ask and What Makes Them Strong</h3>
+                            <p>Secure powerful letters of recommendation that will strengthen your application. Learn who to ask, when to ask, and how to help your recommenders write compelling letters.</p>
+                            <a href="letters-of-recommendation.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">June 25, 2025 • 5 min read</div>
+                            <h3>CASPA Application Timeline: When to Start and Key Deadlines</h3>
+                            <p>Plan your CASPA application timeline effectively. Learn about key deadlines, when to start your application, and how to stay organized throughout the process.</p>
+                            <a href="caspa-timeline.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="post-meta">June 22, 2025 • 6 min read</div>
+                            <h3>PA vs. Other Healthcare Careers: Making the Right Choice</h3>
+                            <p>Compare the PA profession to other healthcare careers. Understand the unique aspects of being a physician assistant and why it might be the right fit for you.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <section class="newsletter">
+            <div class="container">
+                <h3>Stay Updated</h3>
+                <p>Get the latest PA school guidance and career insights delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 The Educated PA. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Category filtering (placeholder for future implementation)
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Here you would implement the filtering logic
+                console.log('Category selected:', this.textContent);
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert('Thank you for subscribing! We\'ll keep you updated with the latest PA school guidance.');
+            this.reset();
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
